@@ -2,6 +2,7 @@
 //master merge
 //hot-fix merge
 //push test
+//pull test
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,27 +12,27 @@ import java.awt.event.ActionListener;
 public class Main extends JFrame implements ActionListener {
 	static JTextField d = new JTextField();
 	static boolean h = true;
-	JMenu t = new JMenu("·É»ú¹ÜÀí");
-	JMenu t2 = new JMenu("º½°à¹ÜÀí");
-	JMenu t1 = new JMenu("³Ë¿Í¹ÜÀí");
-	JMenu t4 = new JMenu("Êı¾İ¹ÜÀí");
-	JMenu t5 = new JMenu("ÏµÍ³¹ÜÀí");
-	JMenu t3 = new JMenu("»úÆ±¹ÜÀí");
+	JMenu t = new JMenu("é£æœºç®¡ç†");
+	JMenu t2 = new JMenu("èˆªç­ç®¡ç†");
+	JMenu t1 = new JMenu("ä¹˜å®¢ç®¡ç†");
+	JMenu t4 = new JMenu("æ•°æ®ç®¡ç†");
+	JMenu t5 = new JMenu("ç³»ç»Ÿç®¡ç†");
+	JMenu t3 = new JMenu("æœºç¥¨ç®¡ç†");
 
-	static JMenuItem A = new JMenuItem("ĞÍºÅºÍ×ùÊı¹ÜÀí");
-	static JMenuItem B = new JMenuItem("³Ë¿Í×ÊÁÏµÇ¼ÇºÍ²éÑ¯");
-	static JMenuItem C = new JMenuItem("º½°àĞÅÏ¢Ìí¼ÓºÍ²éÑ¯");
-	static JMenuItem D = new JMenuItem("Î¬»¤");
-	static JMenuItem E = new JMenuItem("ÍË³ö");
-	static JMenuItem F = new JMenuItem("»úÆ±ĞÅÏ¢Ìí¼ÓºÍ²éÑ¯");
+	static JMenuItem A = new JMenuItem("å‹å·å’Œåº§æ•°ç®¡ç†");
+	static JMenuItem B = new JMenuItem("ä¹˜å®¢èµ„æ–™ç™»è®°å’ŒæŸ¥è¯¢");
+	static JMenuItem C = new JMenuItem("èˆªç­ä¿¡æ¯æ·»åŠ å’ŒæŸ¥è¯¢");
+	static JMenuItem D = new JMenuItem("ç»´æŠ¤");
+	static JMenuItem E = new JMenuItem("é€€å‡º");
+	static JMenuItem F = new JMenuItem("æœºç¥¨ä¿¡æ¯æ·»åŠ å’ŒæŸ¥è¯¢");
 
-	static JLabel l1 = new JLabel("ĞÍºÅ");
-	JLabel l2 = new JLabel("×ùÊı");
+	static JLabel l1 = new JLabel("å‹å·");
+	JLabel l2 = new JLabel("åº§æ•°");
 
 	static JPanel g=new JPanel();
 
 	public Main() {
-		super("»úÆ±Ô¤¶©ÏµÍ³");
+		super("æœºç¥¨é¢„è®¢ç³»ç»Ÿ");
 		
 		g.setBounds(20,100, 300, 300);
 		
@@ -66,7 +67,7 @@ setVisible(true);
 	}
 
 	public static void main(String[] args) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Main f = new Main();
 		
 		
@@ -75,7 +76,7 @@ setVisible(true);
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO ×Ô¶¯Éú³ÉµÄ·½·¨´æ¸ù
+		// TODO è‡ªåŠ¨ç”Ÿæˆçš„æ–¹æ³•å­˜æ ¹
 		Object o = e.getSource();
 		if (o == A) {
 			Airplane M = new Airplane();
@@ -103,7 +104,7 @@ setVisible(true);
 			this.dispose();
 		}
 		if(o==E){
-			int t=JOptionPane.showConfirmDialog(this, "ÊÇ·ñÍË³ö£¿",null, JOptionPane.YES_NO_OPTION);
+			int t=JOptionPane.showConfirmDialog(this, "æ˜¯å¦é€€å‡ºï¼Ÿ",null, JOptionPane.YES_NO_OPTION);
 			if(t==JOptionPane.YES_OPTION)
 			System.exit(0);
 			else if (t==JOptionPane.NO_OPTION) {
